@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Navigate, Route, Routes } from 'react-router-dom';
+
+import AdminLayout from './layout/AdminLayout';
+
+import Dashboard from './pages/DashboardHome';
+import Doctors from './pages/Doctors';
+import PendingDoctors from './pages/PendingDoctors';
+import Patients from './pages/patient';
+import Appointments from './pages/Appointments';
+import Withdrawals from './pages/Withdrawals';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Navigate to="/dashboard" replace />} />
+
+      <Route element={<AdminLayout />}>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/doctors" element={<Doctors />} />
+        <Route path="/pending-doctors" element={<PendingDoctors />} />
+        <Route path="/appointments" element={<Appointments />} />
+        <Route
+  path="/withdrawals"
+  element={<Withdrawals />}
+/>
+        <Route path="/patients" element={<Patients />} />
+      </Route>
+
+      <Route path="*" element={<Navigate to="/dashboard" replace />} />
+    </Routes>
   );
 }
 
