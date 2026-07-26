@@ -9,6 +9,8 @@ import PendingDoctors from './pages/PendingDoctors';
 import Patients from './pages/patient';
 import Appointments from './pages/Appointments';
 import Withdrawals from './pages/Withdrawals';
+import DoctorRecommendations from './pages/DoctorRecommendations';
+import Reports from './pages/Reports';
 
 function App() {
   return (
@@ -20,6 +22,13 @@ function App() {
         <Route path="/doctors" element={<Doctors />} />
         <Route path="/pending-doctors" element={<PendingDoctors />} />
         <Route path="/appointments" element={<Appointments />} />
+        <Route path="/reports" element={<Reports />} />
+        
+
+<Route
+  path="/doctor-recommendations"
+  element={<DoctorRecommendations />}
+/>
         <Route
   path="/withdrawals"
   element={<Withdrawals />}

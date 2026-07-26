@@ -18,6 +18,7 @@ export default function AdminLayout() {
           <NavLink to="/doctors">إدارة الأطباء <span>✚</span></NavLink>
           <NavLink to="/pending-doctors">الموافقة على الأطباء <span>◇</span></NavLink>
           <NavLink to="/patients">إدارة المرضى <span>♚</span></NavLink>
+          <NavLink to="/doctor-recommendations">اطباء مرشحه <span>🌟</span></NavLink>
             <NavLink to="/withdrawals">
     طلبات السحب
     <span>💰</span>

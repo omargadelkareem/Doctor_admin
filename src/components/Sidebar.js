@@ -8,11 +8,14 @@ function Sidebar() {
     { path: '/pending-doctors', label: 'الموافقة على الأطباء', icon: '⏳' },
     { path: '/patients', label: 'إدارة المرضى', icon: '👥' },
     { path: '/appointments', label: 'الحجوزات', icon: '📅' },
+   
+    {
+  label: 'ترشيحات الأطباء',
+  path: '/doctor-recommendations',
+  icon: '🌟',
+},
     { path: '/reports', label: 'التقارير والإحصائيات', icon: '📊' },
-    { path: '/messages', label: 'الرسائل والإشعارات', icon: '💬' },
-    { path: '/notifications', label: 'إرسال إشعارات', icon: '🔔' },
-    { path: '/content', label: 'إدارة المحتوى', icon: '📝' },
-    { path: '/settings', label: 'الإعدادات', icon: '⚙️' },
+   
   ];
 
   const handleLogout = () => {
