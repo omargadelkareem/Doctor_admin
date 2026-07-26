@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom';
 
 const TEAL = '#00796b';
-const TEAL_DARK = '#0b4f5c';
+
 
 export default function AdminLayout() {
   return (

@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 import { db } from '../firebase';
 import { ref, onValue, update, remove } from 'firebase/database';
 
-const TEAL_DARK = '#003f4f';
+
 const TEAL = '#00796b';
 const BG = '#f5f7fb';
 
